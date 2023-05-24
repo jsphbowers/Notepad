@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Note from "../components/Note.jsx";
 
 export default function HomePage() {
   const [count, setCount] = useState(0)
@@ -6,7 +7,7 @@ export default function HomePage() {
   return (
     <div className="home-page">
       <div className="container my-3">
-        <div className="row">
+        {/* <div className="row">
           <div className="col-4">
             <div className="card">
               <div className="card-body">
@@ -16,8 +17,19 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <section className="row">
+          <div className="col-4">
+            <h3>Total Notes = {count}</h3>
+            <div className="card">
+            </div>
+          </div>
+          <div className="col-6">
+            <Note {setCount(count) -> count + 1} />
+          </div>
+        </section>
       </div>
     </div>
   )
 }
+
