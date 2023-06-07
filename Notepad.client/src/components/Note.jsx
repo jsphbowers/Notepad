@@ -5,7 +5,7 @@ export default function Note(props) {
 
   return (
     <div>
-      <textarea name="note" id="note" rows={15} cols={100} onChange={input => { onChange(); setNote((note) => input.target.value) }}></textarea>
+      <textarea name="note" id="note" rows={15} cols={100}></textarea>
       <h1>{note}</h1>
     </div>
   )

@@ -25,7 +25,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="col-6">
-            <Note {setCount(count) -> count + 1} />
+            <Note />
           </div>
         </section>
       </div>
